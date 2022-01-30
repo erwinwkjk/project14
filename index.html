@@ -1,0 +1,73 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body bgcolor="antiquewhite">
+    <div class="w3-animate-opacity">
+     <div class="w3-container"><h2><b>Berbagai Macam Alat Musik</b></h2></div>
+<div class="w3-display-container">
+<img src= "banner.jpg" width=100%px height =35%px>
+</div>
+
+<div class="w3-container">
+</div>
+<div class="w3-bar w3-indigo">
+<button class="w3-bar-item w3-button" onclick="openKota('gitar')">Gitar</button>
+<button class="w3-bar-item w3-button" onclick="openKota('drum')">Drum</button>
+<button class="w3-bar-item w3-button" onclick="openKota('bass')">Bass</button>
+<button class="w3-bar-item w3-button" onclick="openKota('piano')">Piano</button>
+<button class="w3-bar-item w3-button" onclick="openKota('profile')">Profile</button>
+</div>
+
+<div id="gitar" class="w3-container kota w3-animate-left" style="display:none" >
+<h2><b>Gitar</b></h2>
+<p> Gitar adalah sebuah alat musik berdawai yang dimainkan dengan cara dipetik, umumnya menggunakan jari maupun plektrum. 
+    Gitar terbentuk atas sebuah bagian tubuh pokok dengan bagian leher yang padat sebagai tempat senar yang umumnya berjumlah enam didempetkan. 
+    Gitar secara tradisional dibentuk dari berbagai jenis kayu dengan senar yang terbuat dari nilon maupun baja. 
+    Beberapa gitar modern dibuat dari material polikarbonat. Secara umum, gitar terbagi atas 2 jenis: akustik dan elektrik.</p>
+<img src = "gitar.jpg">
+</div>
+
+<div id="drum" class="w3-container kota w3-animate-right" style="display:none">
+<h2><b>Drum</b></h2>
+<p>Drum adalah kelompok alat musik perkusi yang terdiri dari kulit yang direntangkan dan dipukul dengan tangan atau sebuah batang. 
+    Selain kulit, drum juga digunakan dari bahan lain, misalnya plastik. 
+    Drum terdapat di seluruh dunia dan memiliki banyak jenis, misalnya kendang, timpani, Bodhrán, Ashiko, snare drum, bass drum, tom-tom, beduk, dan lain-lain. </p>
+<img src= "drum.jpg">
+</div>
+
+<div id="bass" class="w3-container kota w3-animate-zoom" style="display:none">
+<h2><b>Bass</b></h2>
+<p>Gitar bas elektrik (biasa disebut gitar bas, bas elektrik atau bas saja) adalah alat musik dawai yang menggunakan listrik untuk memperbesar suaranya. 
+    Penampilannya mirip dengan gitar elektrik tetapi ia memiliki tubuh yang lebih besar, leher yang lebih panjang, dan umumnya memiliki empat senar (dibandingkan dengan gitar yang memiliki enam senar). </p>
+<img src= "bass.jpg">
+</div>
+
+<div id="piano" class="w3-container kota w3-animate-opacity" style="display:none">
+<h2><b>Piano</b></h2>
+<p>Piano (yang juga disebut pianoforte) adalah alat musik tuts yang diklasifikasikan sebagai instrumen dawai dan perkusi yang dimainkan dengan menekan tuts-tuts pada papan piano. 
+    Setiap tuts tersambung ke palu yang ada di dalam piano dan menekan senar di dalamnya, sehingga menghasilkan bunyi. 
+    Setiap senar memiliki panjang yang berbeda dan menghasilkan bunyi yang berbeda pula.</p>
+<img src= "piano.jpg">
+</div>
+
+<div id="profile" class="w3-container kota w3-animate-opacity" style="display:none">
+    <h2><b>My Profile</b></h2>
+<p>Nama  : Mochammad Erwin WIjanarko</p>
+<p>Kelas : IF-6 </p>
+<p>NIM   : 10121213 </p>
+</div>
+
+
+<script>
+function openKota(namaKota) {
+var i;
+var x = document.getElementsByClassName("kota");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+document.getElementById(namaKota).style.display = "block";
+}
+</script>
+</body>
+</html>
